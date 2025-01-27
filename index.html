@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>api</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: top;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+      #btn {
+        margin-top: .5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        color: black;
+        letter-spacing: 1.2px;
+        font-size: 12px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(176, 182, 228);
+        border: 2px solid rgb(6, 6, 112);
+        border-radius: 5px;
+      }
+      div{
+        text-align: center;
+      }
+      #btn:hover {
+        background-color: rgb(146, 152, 218); /* Slightly darker shade */
+        transform: scale(1.1); /* Slight enlargement on hover */               
+      }
+      .h1{
+        padding: 10px 5px 5px 5px;
+        text-shadow: 2px 2px 11px rgba(0, 0, 0,0.8);
+      }
+      #box{
+        border: 7px solid rgb(4, 0, 116);
+            height: 95vh; /* Adjust height to center the border within the viewport */
+            box-sizing: border-box; /* Include border in the height calculation */
+            width: 90vh;
+            margin: 60px;
+            background-color:  rgb(184, 99, 153);
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8),   /* Bottom-right shadow */
+            -3px -3px 8px rgba(0, 0, 0, 0.8), /* Top-left shadow */
+            3px -3px 8px rgba(0, 0, 0,0.8),  /* Top-right shadow */
+            -3px 3px 8px rgba(0, 0, 0, 0.8);  /* Bottom-left shadow */
+        
+      }
+      #fact{
+        font-size: 18px;
+      }
+      #img{
+        max-width: 80vh;
+        max-height: 45vh;
+        border: 2px solid rgba(128, 128, 128, 0.672);
+        border-radius: 5px;
+        align-items: center;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8),   /* Bottom-right shadow */
+        -3px -3px 8px rgba(0, 0, 0, 0.8), /* Top-left shadow */
+        3px -3px 8px rgba(0, 0, 0,0.8),  /* Top-right shadow */
+        -3px 3px 8px rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+
+  <body>
+      <div id="box">
+        <h1 class="h1">Click on the button to generate cat images and facts.</h1>
+        <br>
+      <button id="btn">CLICK ME!</button>
+          <p id="fact"></p>
+          <img src="" id="img" alt="" />
+        </div>
+    <script src="api.js"></script>
+  </body>
+</html>
